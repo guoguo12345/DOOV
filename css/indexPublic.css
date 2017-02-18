@@ -1,0 +1,266 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font: 12px/1.5 "微软雅黑", "arial", "宋体"; }
+
+ul li {
+  list-style: none; }
+
+a {
+  cursor: pointer; }
+
+input {
+  border: none;
+  outline: none; }
+
+body {
+  background: #3a3a3a;
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.auto {
+  width: 1280px;
+  margin: 0 auto; }
+
+#header {
+  width: 100%; }
+  #header .header {
+    margin: 0 auto;
+    width: 1263px;
+    min-height: 44px;
+    background: #3a3a3a;
+    line-height: 44px; }
+    #header .header .left {
+      float: left; }
+      #header .header .left a {
+        color: #fff;
+        line-height: 44px; }
+        #header .header .left a:first-child {
+          margin-left: 17px;
+          margin-right: 12px;
+          position: relative; }
+          #header .header .left a:first-child img {
+            width: 70px;
+            height: 80px;
+            background: red;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            z-index: 10;
+            display: none; }
+    #header .header .right {
+      float: right;
+      padding-right: 34px; }
+      #header .header .right a {
+        color: #fff;
+        margin-top: 15px;
+        display: inline-block; }
+      #header .header .right .login, #header .header .right .register {
+        width: 50px; }
+      #header .header .right .login {
+        background: url(../imgs/login.png) no-repeat 0 center;
+        text-align: right;
+        padding-right: 4px; }
+      #header .header .right .buyCar {
+        width: 108px;
+        padding-left: 20px;
+        background: url(../imgs/cart.png) no-repeat 0 center; }
+        #header .header .right .buyCar span {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-left: 9px;
+          background: #e8194a;
+          color: #fff;
+          border-radius: 50%;
+          text-align: center; }
+
+#nav {
+  width: 100%;
+  overflow: hidden; }
+  #nav .nav {
+    clear: both;
+    width: 1235px;
+    height: 89px;
+    background: #fff;
+    float: left; }
+    #nav .nav a {
+      display: inline-block;
+      line-height: 89px;
+      padding-left: 17px;
+      float: left; }
+    #nav .nav .navList {
+      float: left;
+      width: 650px;
+      overflow: hidden;
+      margin-left: 90px; }
+    #nav .nav .navList li {
+      float: left; }
+      #nav .nav .navList li a {
+        font-size: 18px;
+        padding: 0 28px; }
+        #nav .nav .navList li a:hover {
+          color: #f00; }
+    #nav .nav form {
+      padding-top: 22px; }
+    #nav .nav form input {
+      width: 205px;
+      height: 40px;
+      padding-left: 5px;
+      border: 1px solid #f0f0f0;
+      float: left; }
+    #nav .nav form a {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #f0f0f0;
+      background: url(../imgs/search.png) no-repeat center; }
+
+#bottom {
+  width: 100%;
+  overflow: hidden; }
+  #bottom .footer {
+    height: 80px;
+    width: 1235px;
+    background: #f8f8f8; }
+    #bottom .footer .footer-top {
+      width: 400px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 auto; }
+      #bottom .footer .footer-top a:hover {
+        color: #DF0068; }
+    #bottom .footer p {
+      text-align: center; }
+  #bottom .bottom {
+    height: 250px;
+    width: 1175px;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: #fff; }
+    #bottom .bottom .bottom-top {
+      min-height: 60px;
+      border-bottom: 1px solid #ccc;
+      margin-right: 10px; }
+      #bottom .bottom .bottom-top dl {
+        width: 190px;
+        min-height: 42px;
+        margin-right: 100px;
+        float: left; }
+        #bottom .bottom .bottom-top dl:last {
+          margin-right: 0; }
+        #bottom .bottom .bottom-top dl dt {
+          float: left; }
+          #bottom .bottom .bottom-top dl dt img {
+            width: 42px;
+            float: left;
+            padding-left: 12px;
+            padding-right: 12px; }
+        #bottom .bottom .bottom-top dl dd .font14 {
+          font-size: 14px; }
+        #bottom .bottom .bottom-top dl dd .grey {
+          height: 42px;
+          color: #999; }
+        #bottom .bottom .bottom-top dl dd .red:hover {
+          color: #DF0068; }
+        #bottom .bottom .bottom-top dl dd .green:hover {
+          color: #0f0; }
+        #bottom .bottom .bottom-top dl dd .orange:hover {
+          color: darkorange; }
+    #bottom .bottom .bottom-bottom ul {
+      padding: 0 40px;
+      float: left; }
+      #bottom .bottom .bottom-bottom ul h3 {
+        font-size: 16px;
+        padding: 20px 0; }
+      #bottom .bottom .bottom-bottom ul li {
+        padding: 3px 0; }
+        #bottom .bottom .bottom-bottom ul li a:hover {
+          color: #DF0068; }
+    #bottom .bottom .bottom-bottom .bottom-right {
+      float: left; }
+      #bottom .bottom .bottom-bottom .bottom-right dl {
+        height: 50px;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-bottom: 20px; }
+        #bottom .bottom .bottom-bottom .bottom-right dl dt {
+          float: left; }
+          #bottom .bottom .bottom-bottom .bottom-right dl dt img {
+            padding-top: 7px; }
+        #bottom .bottom .bottom-bottom .bottom-right dl dd {
+          float: left;
+          padding-left: 8px; }
+          #bottom .bottom .bottom-bottom .bottom-right dl dd span {
+            font-size: 21px; }
+      #bottom .bottom .bottom-bottom .bottom-right a {
+        width: 178px;
+        height: 38px;
+        margin-left: 45px;
+        margin-top: 40px; }
+
+.user {
+  position: fixed;
+  top: 300px;
+  right: -1px;
+  background: #DF0068; }
+  .user:hover span {
+    display: block; }
+  .user span {
+    position: fixed;
+    display: inline-block;
+    width: 95px;
+    height: 33px;
+    right: 25px;
+    background: url(../imgs/center-right4.png) center;
+    top: 300px;
+    text-align: center;
+    line-height: 33px;
+    display: none; }
+
+._right {
+  position: fixed;
+  width: 28px;
+  overflow: hidden;
+  background: #DF0068;
+  top: 340px;
+  right: 0;
+  text-align: center; }
+  ._right a {
+    display: block; }
+  ._right .count {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: #fff; }
+  ._right .car {
+    padding: 5px 5px;
+    color: #fff; }
+
+.customer {
+  position: fixed;
+  top: 450px;
+  background: #fff;
+  right: 0; }
+  .customer:hover span {
+    display: block; }
+  .customer span {
+    position: fixed;
+    display: inline-block;
+    width: 95px;
+    height: 33px;
+    right: 25px;
+    background: url(../imgs/center-right4.png) center;
+    top: 450px;
+    text-align: center;
+    line-height: 33px;
+    display: none; }
+
+/*# sourceMappingURL=indexPublic.css.map */

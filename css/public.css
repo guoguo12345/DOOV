@@ -1,0 +1,202 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  list-style: none; }
+
+body {
+  font: 12px/1.4 "微软雅黑";
+  width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -640px;
+  background: #fff; }
+
+#header {
+  width: 100%; }
+  #header .header {
+    width: 1243px;
+    min-height: 40px;
+    margin: 0 auto;
+    color: #fff;
+    padding-left: 36px;
+    background: linear-gradient(to right, #da1655, #97217c);
+    line-height: 40px; }
+    #header .header .left {
+      float: left; }
+      #header .header .left span {
+        display: inline-block; }
+      #header .header .left a {
+        color: #fff;
+        margin-left: 20px; }
+        #header .header .left a img {
+          width: 148px;
+          height: 　148px; }
+      #header .header .left .download {
+        position: relative; }
+        #header .header .left .download img {
+          position: absolute;
+          left: 0;
+          top: 40px;
+          border: 1px solid #ccc;
+          display: none;
+          z-index: 5; }
+        #header .header .left .download:hover img {
+          display: block; }
+      #header .header .left .weixin {
+        position: relative; }
+        #header .header .left .weixin img {
+          position: absolute;
+          left: 0;
+          top: 40px;
+          border: 1px solid #ccc;
+          display: none;
+          z-index: 5; }
+        #header .header .left .weixin:hover img {
+          display: block; }
+    #header .header .right {
+      float: right;
+      padding-right: 20px; }
+      #header .header .right a {
+        color: #fff;
+        display: inline-block; }
+      #header .header .right .login, #header .header .right .register {
+        width: 50px; }
+      #header .header .right .login {
+        background: url(../imgs/login.png) no-repeat 0 center;
+        text-align: right; }
+      #header .header .right .buyCar {
+        width: 108px;
+        padding-left: 20px;
+        background: url(../imgs/cart.png) no-repeat 0 center; }
+        #header .header .right .buyCar span {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-left: 9px;
+          background: #e8194a;
+          color: #fff;
+          border-radius: 50%;
+          text-align: center; }
+
+#nav {
+  width: 100%;
+  overflow: hidden; }
+  #nav .nav {
+    clear: both;
+    width: 1279px;
+    height: 70px;
+    margin: 0 auto;
+    background: #fff;
+    float: left; }
+    #nav .nav a {
+      display: inline-block;
+      line-height: 70px;
+      padding-left: 17px;
+      float: left; }
+    #nav .nav .navList {
+      float: left;
+      width: 650px;
+      overflow: hidden;
+      margin-left: 90px; }
+    #nav .nav .navList li {
+      float: left; }
+      #nav .nav .navList li a {
+        font-size: 18px;
+        padding: 0 28px; }
+        #nav .nav .navList li a:hover {
+          color: #f00; }
+    #nav .nav form {
+      padding-top: 22px; }
+    #nav .nav form input {
+      width: 200px;
+      height: 40px;
+      padding-left: 5px;
+      border: 1px solid #c164a5;
+      float: left;
+      border-radius: 10px 0 0 10px;
+      outline: none; }
+    #nav .nav form a {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      border: 1px solid #c164a5;
+      border-radius: 0 10px 10px  0;
+      background: url(../imgs/search.png) no-repeat center; }
+
+#footer {
+  width: 100%;
+  overflow: hidden; }
+  #footer .footer {
+    width: 1279px;
+    min-height: 340px;
+    background: #f0f0f0;
+    margin: 0 auto; }
+  #footer .footer-top {
+    min-height: 240px;
+    background: #dcdcdc; }
+    #footer .footer-top dl {
+      padding-left: 150px;
+      padding-top: 10px;
+      float: left; }
+      #footer .footer-top dl dt {
+        width: 72px;
+        height: 40px;
+        font-size: 18px;
+        padding-top: 70px;
+        margin-bottom: 10px;
+        background: url(../imgs/common-sprites.png) no-repeat 10px 10px;
+        font-weight: bolder;
+        color: #666; }
+      #footer .footer-top dl dd a {
+        display: block;
+        color: #646464;
+        width: 50px;
+        margin-left: 8px;
+        margin-top: 3px;
+        margin-bottom: 3px; }
+        #footer .footer-top dl dd a:hover {
+          border-bottom: 1px solid #646464; }
+      #footer .footer-top dl:nth-child(2) dt {
+        background-position: -215px 10px; }
+      #footer .footer-top dl:nth-child(3) dt {
+        background-position: -67px 10px; }
+      #footer .footer-top dl:nth-child(4) dt {
+        background-position: -px 10px; }
+      #footer .footer-top dl:nth-child(5) dt {
+        background: url(../imgs/follow-us.png) no-repeat 7px 8px; }
+  #footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    line-height: 100px; }
+
+.fixDiv {
+  position: fixed;
+  display: none;
+  right: 10px;
+  bottom: 100px;
+  background: red;
+  width: 40px;
+  min-height: 108px; }
+  .fixDiv a {
+    display: block;
+    width: 40px;
+    height: 36px;
+    background: url(../imgs/icon-top.jpg) no-repeat; }
+    .fixDiv a:nth-child(2) {
+      background: url(../imgs/favourite.jpg) no-repeat; }
+    .fixDiv a:nth-child(3) {
+      background: url(../imgs/icon-qq.jpg) no-repeat; }
+
+/*# sourceMappingURL=public.css.map */

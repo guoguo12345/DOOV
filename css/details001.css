@@ -1,0 +1,195 @@
+@charset "UTF-8";
+#details {
+  width: 100%; }
+  #details .details {
+    width: 1235px;
+    overflow: hidden;
+    background: #fff;
+    padding-top: 20px; }
+    #details .details .details-top {
+      width: 1200px;
+      height: 600px;
+      margin-left: 17px; }
+      #details .details .details-top .top-left {
+        width: 500px;
+        height: 600px;
+        float: left;
+        position: relative; }
+        #details .details .details-top .top-left .glass {
+          width: 500px;
+          height: 500px;
+          overflow: hidden;
+          position: relative; }
+          #details .details .details-top .top-left .glass img {
+            width: 100%;
+            height: 100%;
+            float: left; }
+          #details .details .details-top .top-left .glass .pop {
+            position: absolute;
+            z-index: 5;
+            left: 0;
+            top: 0;
+            cursor: crosshair;
+            background: rgba(204, 204, 204, 0.4);
+            width: 250px;
+            height: 250px; }
+        #details .details .details-top .top-left .glassRight {
+          position: absolute;
+          left: 540px;
+          top: 50px;
+          width: 250px;
+          height: 250px;
+          display: none;
+          overflow: hidden; }
+          #details .details .details-top .top-left .glassRight img {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            float: left;
+            left: 0;
+            top: 0; }
+        #details .details .details-top .top-left .tab {
+          width: 500px;
+          height: 80px; }
+          #details .details .details-top .top-left .tab img {
+            width: 75px;
+            height: 75px;
+            float: left;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            margin-top: 8px;
+            margin-left: 18px; }
+      #details .details .details-top .top-right {
+        float: right;
+        width: 600px;
+        height: 475px; }
+        #details .details .details-top .top-right p:nth-child(1) {
+          font-size: 26px;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 10px; }
+          #details .details .details-top .top-right p:nth-child(1) span {
+            font-size: 26px;
+            color: #e5006a; }
+          #details .details .details-top .top-right p:nth-child(1)::after {
+            content: "(新品上市 立减100元)";
+            font-size: 16px;
+            color: #666666;
+            padding-left: 5px; }
+        #details .details .details-top .top-right p:nth-child(2) {
+          padding: 10px 0;
+          font-size: 14px;
+          color: #e5006a; }
+        #details .details .details-top .top-right dl dt {
+          font-size: 16px;
+          color: #666666;
+          padding-bottom: 10px; }
+        #details .details .details-top .top-right dl dd {
+          float: left;
+          font-size: 14px;
+          color: #666666;
+          border: 1px solid #cccccc;
+          padding: 15px 40px;
+          margin-right: 20px; }
+        #details .details .details-top .top-right dl:nth-of-type(1) dd {
+          cursor: pointer; }
+        #details .details .details-top .top-right .count {
+          clear: both; }
+          #details .details .details-top .top-right .count dt {
+            padding: 30px 0 20px 0; }
+          #details .details .details-top .top-right .count dd {
+            border: none;
+            padding: 0; }
+            #details .details .details-top .top-right .count dd input {
+              width: 180px;
+              height: 46px;
+              text-align: center;
+              border: 1px solid #cccccc;
+              float: left;
+              font-size: 20px; }
+            #details .details .details-top .top-right .count dd a {
+              display: inline-block;
+              width: 46px;
+              height: 47px;
+              text-align: center;
+              line-height: 47px;
+              font-size: 20px;
+              border: 1px solid #cccccc;
+              float: left; }
+        #details .details .details-top .top-right dl:nth-of-type(3) dd {
+          border: none;
+          padding: 50px 0 0 0; }
+          #details .details .details-top .top-right dl:nth-of-type(3) dd a {
+            padding: 15px 110px;
+            margin-right: 20px;
+            font-size: 14px; }
+          #details .details .details-top .top-right dl:nth-of-type(3) dd .buy {
+            background: #e5006a;
+            color: #fff; }
+          #details .details .details-top .top-right dl:nth-of-type(3) dd .add {
+            border: 1px solid #e5006a;
+            background: #f8f8f8;
+            color: #e5006a; }
+    #details .details .details-bottom {
+      padding-left: 17px;
+      padding-top: 50px; }
+      #details .details .details-bottom .tab {
+        width: 1200px;
+        overflow: hidden;
+        background: #f2f2f2;
+        border-bottom: 1px solid #e5006a; }
+        #details .details .details-bottom .tab a {
+          padding: 15px 30px;
+          background: #f2f2f2;
+          font-size: 14px;
+          color: #666666;
+          float: left; }
+          #details .details .details-bottom .tab a:first-child {
+            background: #e5006a;
+            color: #fff; }
+      #details .details .details-bottom .goodsDetails {
+        width: 1217px;
+        overflow: hidden; }
+        #details .details .details-bottom .goodsDetails img {
+          margin-bottom: 10px;
+          width: 1200px; }
+      #details .details .details-bottom .para {
+        width: 1200px;
+        height: 727px;
+        border: 1px solid #e4e4e4;
+        margin-top: 30px;
+        border-collapse: collapse;
+        text-align: left;
+        margin-bottom: 30px;
+        display: none; }
+        #details .details .details-bottom .para tr th {
+          font-size: 16px;
+          color: #666666;
+          text-align: left;
+          background: #f1f1f1;
+          padding-left: 10px; }
+        #details .details .details-bottom .para tr td {
+          border: 1px solid #e4e4e4;
+          font-size: 14px;
+          padding-left: 10px; }
+          #details .details .details-bottom .para tr td:nth-of-type(1) {
+            width: 130px; }
+      #details .details .details-bottom .comment, #details .details .details-bottom .consult {
+        width: 1200px;
+        min-height: 727px;
+        margin-top: 30px;
+        display: none; }
+        #details .details .details-bottom .comment .butComment, #details .details .details-bottom .consult .butComment {
+          padding: 5px 15px;
+          background: #e5006a;
+          font-size: 14px;
+          float: right;
+          color: #fff; }
+        #details .details .details-bottom .comment .content, #details .details .details-bottom .consult .content {
+          clear: both;
+          text-align: center;
+          padding-top: 20px; }
+          #details .details .details-bottom .comment .content span, #details .details .details-bottom .consult .content span {
+            color: #e5006a;
+            font-weight: 600; }
+
+/*# sourceMappingURL=details.css.map */

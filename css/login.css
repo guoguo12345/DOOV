@@ -1,0 +1,120 @@
+#login {
+  width: 100%; }
+  #login .login {
+    width: 1279px;
+    height: 440px;
+    background: #f0f0f0;
+    margin: 0 auto;
+    margin-top: 120px; }
+    #login .login .left {
+      width: 500px;
+      height: 300px;
+      float: left;
+      margin-left: 40px;
+      margin-top: 20px; }
+    #login .login .right {
+      float: right;
+      width: 590px;
+      height: 405px;
+      color: #666;
+      border: 1px solid #ccc;
+      margin-right: 40px;
+      margin-top: 20px; }
+      #login .login .right p {
+        font-size: 18px;
+        padding-left: 12px;
+        padding-top: 12px;
+        padding-bottom: 20px;
+        color: #3164af; }
+        #login .login .right p::after {
+          content: "USER LOGIN";
+          color: #d8dee6;
+          font-size: 14px;
+          padding-left: 12px; }
+      #login .login .right .rightUl li {
+        height: 40px;
+        font-size: 14px; }
+        #login .login .right .rightUl li span {
+          font-size: 14px;
+          display: inline-block;
+          width: 110px;
+          text-align: right;
+          padding-right: 10px; }
+          #login .login .right .rightUl li span::before {
+            content: "*";
+            color: red;
+            padding: 3px; }
+        #login .login .right .rightUl li #span {
+          float: left; }
+        #login .login .right .rightUl li #test {
+          font-size: 26px;
+          float: left; }
+        #login .login .right .rightUl li #testImg {
+          display: inline-block;
+          width: 80px;
+          float: left;
+          margin-top: 5px; }
+          #login .login .right .rightUl li #testImg img {
+            width: 20px;
+            height: 30px;
+            float: left; }
+        #login .login .right .rightUl li input {
+          width: 210px;
+          height: 18px;
+          padding: 4px;
+          color: #666;
+          border-radius: 5px;
+          box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.075); }
+        #login .login .right .rightUl li label {
+          font-size: 14px;
+          margin-right: 10px; }
+        #login .login .right .rightUl li .isRememberUserName {
+          width: 13px;
+          height: 13px;
+          margin-right: 10px;
+          box-shadow: inset 0px 1px 2px black; }
+        #login .login .right .rightUl li #checkCode {
+          width: 104px;
+          float: left;
+          margin-top: 5px; }
+        #login .login .right .rightUl li b {
+          display: inline-block;
+          width: 112px;
+          padding-right: 10px; }
+        #login .login .right .rightUl li .submit {
+          width: 100px;
+          height: 35px;
+          color: #fff;
+          background: url(../imgs/login.gif); }
+        #login .login .right .rightUl li .rules {
+          display: inline-block;
+          width: 531px;
+          height: 202px;
+          border: 1px solid #e6e6e6;
+          background: #f0f0f0;
+          color: #999;
+          line-height: 24px;
+          padding: 0 4px;
+          overflow-y: scroll; }
+        #login .login .right .rightUl li a {
+          color: #666;
+          font-size: 14px; }
+        #login .login .right .rightUl li em {
+          font-style: normal;
+          display: inline-block;
+          padding: 10px 0 5px 0; }
+      #login .login .right .rightUl .bigLi {
+        height: 100px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc; }
+      #login .login .right .rightUl .last em {
+        font-size: 18px;
+        color: #cc062d; }
+      #login .login .right .rightUl .last a {
+        color: #3164af; }
+      #login .login .right .rightUl .isRememberLi {
+        height: 20px; }
+        #login .login .right .rightUl .isRememberLi a:hover {
+          color: red; }
+
+/*# sourceMappingURL=login.css.map */

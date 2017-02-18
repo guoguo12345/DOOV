@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>页面不存在 - DOOV SHOP</title>
+<meta name="author" content="SHOP++ Team" />
+<meta name="copyright" content="SHOP++" />
+<link href="/resources/shop/default/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/resources/shop/default/css/gzf_common.css" rel="stylesheet" type="text/css" />
+<link href="/resources/shop/default/css/gzf_common.css" rel="stylesheet" type="text/css" />
+<link href="/resources/shop/default/css/error.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/resources/shop/default/js/jquery.js"></script>
+<script type="text/javascript" src="/resources/shop/default/js/common.js"></script>
+</head>
+<body>
+<!--[if lt IE 9]>
+<script src="/resources/shop/default/js/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$().ready(function() {
+
+	var $headerLogin = $("#headerLogin");
+	var $headerName = $("#headerName");
+	var $headerLogout = $("#headerLogout");
+	var $goodsSearchForm = $("#goodsSearchForm");
+	var $keyword = $("#goodsSearchForm input");
+	var defaultKeyword = "商品搜索";
+	var $searchBtn=$("#searchBtn");
+	var username = getCookie("username");
+	var nickname = getCookie("nickname");
+
+	if ($.trim(nickname) != "") {
+		$headerName.text("您好, " + nickname).show();
+		$headerLogout.show();
+	} else if ($.trim(username) != "") {
+		$headerName.text("您好, " + username).show();
+		$headerLogout.show();
+	} else {
+		$headerLogin.show();
+	}
+	
+	
+	$keyword.focus(function() {
+		if ($.trim($keyword.val()) == defaultKeyword) {
+			$keyword.val("");
+		}
+	});
+	
+	$keyword.blur(function() {
+		if ($.trim($keyword.val()) == "") {
+			$keyword.val(defaultKeyword);
+		}
+	});
+	
+	$goodsSearchForm.submit(function() {
+		if ($.trim($keyword.val()) == "" || $keyword.val() == defaultKeyword) {
+			return false;
+		}
+	});
+	
+	$searchBtn.click(function(){
+		if ($.trim($keyword.val()) == "" || $keyword.val() == defaultKeyword) {
+			return false;
+		}
+		$goodsSearchForm.submit();
+	});
+
+		var $win = $(window);
+		var oldTop = $win.scrollTop();
+		var $header = $(".global-header");
+		$win.scroll(function(){
+			var now = $win.scrollTop();
+			if( now > 110 && now > oldTop ){
+				if( !$header.is(":animated") ){
+					$header.animate({
+						top: -110
+					});
+				}
+				
+			}else{
+				if( !$header.is(":animated") ){
+					$header.animate({
+						top: 0
+					});
+				}
+				
+			}
+			oldTop = now;
+
+		});
+	
+
+});
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b06ab658ff5b3a0bf3cb570325f7a2f1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header class="global-header" id="global-header">
+	<div class="top-bar">
+		<div class="container">
+			<p class="welcome">您好，欢迎来到朵唯官方商城  </p>
+			<div class="qrcode-wrap" style="margin-top: 12px;">
+				<div class="qrcode">
+					<span>您还可以下载朵唯商城APP</span>
+					<div class="block">
+						<img src="/resources/shop/default/images/doov_app.png">
+					</div>
+				</div>
+				<div class="qrcode">
+					<span>关注朵唯微信公众号</span>
+					<div class="block">
+						<img src="/resources/shop/default/images/doov_wx.jpg?version=1">
+					</div>
+				</div>
+
+			</div>
+			<div class="side-menus">
+				<div id="headerLogin" class="user-center" style="display:none" title="登录">
+					<a href="/login.jhtml">登录</a>&nbsp;|&nbsp;	<a href="/register.jhtml">注册</a>
+				</div>
+				<div id="headerLogout" class="user-center" style="display:none" title="退出">
+					
+					<span id="headerName"></span>
+					<a href="/member/index.jhtml" title="个人中心">[个人中心]</a>&nbsp;|&nbsp;
+					<a href="/logout.jhtml" title="退出">[退出]</a>
+				</div>
+				<div id="headerCart"  class="cart">
+					<a href="/cart/list.jhtml">购物车</a>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<a href="/">
+			<img src="/upload/image/logo.gif?version=2" alt="朵唯官方商城 朵唯手机官网 朵唯唯一官方购物网站" height="19px" class="logo">
+		</a>
+		<nav class="nav">
+		
+		
+			<ul>
+					<li >
+					<a href="/goods/list/1.jhtml"   target="_blank">手机</a>
+					</li>
+					<li >
+					<a href="/goods/list/2.jhtml"   target="_blank">配件</a>
+					</li>
+					<li >
+					<a href="/goods/list/4.jhtml"   target="_blank">精致生活</a>
+					</li>
+					<li >
+					<a href="/service/index.jhtml"   target="_blank">服务</a>
+					</li>
+					<li >
+					<a href="/goods/list/11.jhtml"   target="_blank">积分商城</a>
+					</li>
+			</ul>
+		</nav>
+		
+		<div class="side-block">
+		<form id="goodsSearchForm" action="/goods/search.jhtml" method="get">
+			<div class="search-block">
+				<input type="text" name="keyword"  autocomplete="off" x-webkit-speech="x-webkit-speech" x-webkit-grammar="builtin:search" placeholder="商品搜索" maxlength="30"  id="goodsSearchForm">
+				<div class="search-icon" id="searchBtn"></div>
+			</div>
+		</form>
+		</div>
+	</div>
+</header>
+	<div class="container error">
+		<div class="row">
+			<div class="span12">
+				<div class="main">
+					<dl>
+						<dd>对不起，您所访问的页面不存在！</dt><dd>您所访问的页面可能已经删除、更名或暂时不可用</dd><dd>请确保您访问的网站地址拼写和格式正确无误</dd>
+						<dd>
+							<a href="javascript:;" onclick="window.history.back(); return false;">&gt;&gt; 返回上一页</a>
+						</dd>
+						<dd>
+							<a href="/">&gt;&gt; 返回首页</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+<footer class="global-footer">
+		<div class="container">
+			<div class="ft-col">
+			<div class="ico-1"></div>
+				<h3>购物指南</h3>
+				<ul>
+					<li>
+						<a href="/article/page.jhtml?id=4" target="_blank">购物流程</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=18" target="_blank">支付方式</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=25" target="_blank">物流配送</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ft-col">
+			<div class="ico-4"></div>
+				<h3>技术支持</h3>
+				<ul>
+					<li>
+						<a href="/article/page.jhtml?id=1" target="_blank">产品手册</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=23" target="_blank">软件下载</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=29" target="_blank">手机知识</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ft-col">
+			<div class="ico-2"></div>
+				<h3>关于朵唯</h3>
+				<ul>
+					<li>
+						<a href="/article/page.jhtml?id=19" target="_blank">发展历程</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=20" target="_blank">企业文化</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=21" target="_blank">公司荣誉</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=33" target="_blank">联系我们</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ft-col">
+			<div class="ico-3"></div>
+				<h3>售后服务</h3>
+				<ul>
+					<li>
+						<a href="/article/page.jhtml?id=16" target="_blank">三包服务</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=12" target="_blank">退换货说明</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=11" target="_blank">寄修规则</a>
+					</li>
+					<li>
+						<a href="/article/page.jhtml?id=14" target="_blank">售后网点</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ft-col">
+			<div class="ico-5"></div>
+				<h3>关注我们</h3>
+				<ul>
+					<li>
+						<a href="http://www.weibo.com/doovladyphone">新浪微博</a>
+					</li>
+					<li>
+						<a href="http://t.qq.com/zl494533964">微信公众号</a>
+					</li>
+				</ul>
+			</div>
+			<!--
+			<div class="ft-col">
+				<img src="/resources/shop/default/images/doov_wx.jpg" width="150" height="150">
+				<p class="qr-text">官方微信</p>
+			</div>
+			-->
+		</div>
+		<div class="footer-block">
+			<p>
+			</p>
+			<p>
+				粤ICP备09095946号Copyright © 2015-2016 朵唯官方商城 朵唯手机官网 朵唯唯一官方购物网站 版权所有
+			</p>
+		</div>
+	<span style="display: none;">
+		<script type="text/javascript" src="http://pw.cnzz.com/c.php?id=1256401852&l=2" charset="gb2312"></script>
+	</span>
+</footer>
+</body>
+</html>

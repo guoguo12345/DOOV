@@ -1,0 +1,94 @@
+@charset "utf-8";
+//主体（商品列表）
+#goods{
+    width: 100%;    
+    .goods{     
+        width: 1235px;
+        height: 1630px;
+        background: #f8f8f8;
+        .index{
+            font-size: 18px;
+            padding: {
+                top: 20px;
+                left: 30px;
+                bottom: 20px;
+            } 
+            a{
+                font-size: 18px;
+            }
+        }
+        //筛选框
+        .choiceList{
+            width: 1200px;
+            height: 275px;
+            background: #fff;
+            margin:{
+                left: 17px;
+                bottom: 40px;
+            }
+            li{
+                padding: {
+                    left: 30px;
+                    top: 15px;
+                    bottom: 10px;
+                }
+                font-size: 14px;
+                color: #666;
+                span{
+                    font-size: 14px;
+                }
+                a{
+                    padding: 0 20px;
+                    font-size: 14px;
+                    color: #000;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+            
+        } 
+        .goodsDl{
+            dl{
+                width: 388px;
+                height: 388px;
+                background: #fff;
+                text-align: center;
+                float: left;
+                margin:{
+                    left: 17px;
+                    top: 20px;
+                }
+                dt{
+                    width: 236px;
+                    height: 251px;
+                    padding:{
+                        left: 80px;
+                        top: 50px;
+                    }
+                    img{
+                      width: 80%;
+                      height: 80%;
+                    }
+                }
+                dd{
+                    a{
+                        display: block;
+                        &:nth-child(1){
+                            font-size: 16px;
+                            padding-top: 10px;
+                        } 
+                        &:nth-child(2){
+                            color: #c0c0c0;
+                        }
+                        &:nth-child(3){
+                            color: #ff0000;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
