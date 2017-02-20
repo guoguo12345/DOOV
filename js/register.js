@@ -31,7 +31,7 @@ function user(){
 	var ruser = /^(1[3|4|5|7|8]\d{9})|(\w+@\w+\.(com|cn|com.cn))$/;
 	var user=$(".register-left .user").val();
 	var stu=ruser.test(user);
-	$.get("checkUser.php",{"userName":$(".user").val()},function(data){
+	$.get("../checkUser.php",{"userName":$(".user").val()},function(data){
 		if(stu==false){
 			$("#testUser").html(" 用户名不合法/不能为空");
 			$("#testUser").css("color","red");

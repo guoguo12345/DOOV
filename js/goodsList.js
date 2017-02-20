@@ -8,11 +8,27 @@ $(function(){
 			$(this).find("img").hide();
 		}
 	);
-	//图片放大
-	$(".goodsDl dl").mouseenter(function(){
+	$.ajax({
+		type: "post",
+		url: "../getGoodsJson.php",			
+		success: function(data){
+			var	arr = eval("("+data+")");
+			console.log(arr);
+			for(var i=0;i<arr.length;i++){
+				var str = '<dl><dt><a href="details'+arr[i].goodsId+'.html"><img src="../'
+				+arr[i].goodsImg+'" /></a></dt><dd><a>'+arr[i].goodsName+
+				'</a><a>'+arr[i].goodsDesc+'</a><a>'+
+				arr[i].goodsPrice+'</a></dd></dl>';			
+				$(".goodsDl").append(str);
+			}
+		}			
+	});	
+//图片放大
+	$(".goodsDl").on("mouseenter","dl",function(){
 		$(this).find("img").stop(true,true).animate({"width":"100%","height":"100%"},200);	
 	});
-	$(".goodsDl dl").mouseleave(function(){
+	$(".goodsDl").on("mouseleave","dl",function(){
 		$(this).find("img").stop(true,true).animate({"width":"80%","height":"80%"},200);	
 	});
+			
 });

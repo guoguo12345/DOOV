@@ -8,7 +8,7 @@
 	//选择数据库
 	mysql_select_db("shoppingcenter",$conn);
 	//执行SQL语句
-	$sqlstr = "select * from vipinfo where vipName= '".$userName."' and '".$userPass."'";
+	$sqlstr = "select * from vipinfo where vipName='".$userName."' and vipPass='".$userPass."'";
 	//结果集
 	$result = mysql_query($sqlstr,$conn);
 	//查询行数

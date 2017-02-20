@@ -45,13 +45,13 @@ $(function(){
 	});
 	//登录判断用户名是否存在
 	$(".submit").click(function(){
-		$.post("login.php",{"userName":$(".text").val(),"userPass":$(".pass").val()},function(data){
+		$.post("../login.php",{"userName":$(".text").val(),"userPass":$(".pass").val()},function(data){
 			console.log(data);
 			if(data.indexOf("1")>-1){
 				$.cookie( "userName" , $(".text").val(),{ path: '/', expires: 7 });
 				location.href="index.html";
 			}else{
-				alert("用户名不存在,请去注册");
+				alert("用户名不存在/密码错误");
 			}
 		});
 		

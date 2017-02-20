@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"  />
+		<link rel="stylesheet" type="text/css" href="../css/shoppingCar.css" />
+		<script src="../js/jquery-1.8.3.js"></script>
+		<script src="../js/shoppingCar.js"></script>	
+	</head>
+	<body>
+		<!--		头部-->
+	<header>
+		<div id="header">
+			<div class="header">
+				<div class="left">
+					<span>您好,欢迎来到朵唯官方商城</span>
+					<a href="###" class="download">
+						您还可以下载朵唯商城APP
+						<img  src="../imgs/doov_app.png"  />
+					</a>
+					<a href="###" class="weixin">
+						关注朵唯微信公众号
+						<img  src="../imgs/doov_wx.jpg"  />
+					</a>
+				</div>
+				<div class="right">
+					<a href="login.html" class="login">登录 |</a>
+					<a href="register.html" class="register">注册</a>
+					<a href="shoppingCar.html" class="buyCar">购物车
+						<sup>0</sup>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--		导航           -->
+		<div id="nav">
+			<div class="nav">
+				<a href="index.html" class="logo">
+					<img  src="../imgs/logo.gif" alt="logo"/>
+				</a>
+				<ul class="navList">
+					<li><a href="goodsList.html">手机</a></li>
+					<li><a href="###">配件</a></li>
+					<li><a href="###">精致生活</a></li>
+					<li><a href="###">服务</a></li>
+					<li><a href="###">积分商城</a></li>
+				</ul>
+				<form>
+					<input type="text" placeholder="商品搜索" />
+					<a href="#" class="search"></a>
+				</form>
+			</div>
+		</div>
+	</header>
+	<!--购物车主体-->
+	<div id="shoppingCar">
+		<div class="shoppingCar">
+			<p><span>查看购物车</span><span>订单结算</span><span>订单完成</span></p>
+			<table>
+				<thead>
+					<tr>
+						<th width="80"><label><input class="check-all check" type="checkbox" />全选</label></th>
+						<th width="80">图片</th>
+						<th width="350">商品</th>
+						<th width="200">价格</th>
+						<th width="170">数量</th>
+						<th width="160">小计</th>
+						<th>操作</th>					
+					</tr>	
+				</thead>
+				<tbody>
+					<tr>
+						<td width="80"><input class="check" type="checkbox" /></td>
+						<td><img  src="../imgs/873c8bfd-bbe5-43e7-b9f7-c6ec3fb7ec12-large.jpg"</td>
+						<td><a href="details001.html">朵唯L9mini</a><span class="phoneColor">[玫瑰金]</span></td>
+						<td class="priceOut">￥<span class="price">1499.08</span></td>
+						<td>
+							<button class="decrease">-</button>
+							<input class="counts" disabled="disabled" type="text" value="1" />	
+							<button class="increase">+</button>		
+						</td>
+						<td class="totalPriceOut">￥<span class="totalPrice">1499.08</span></td>
+						<td><a href="###" class="del">删除</a></td>
+					</tr>
+					<tr>
+						<td width="80"><input class="check" type="checkbox" /></td>
+						<td><img  src="../imgs/873c8bfd-bbe5-43e7-b9f7-c6ec3fb7ec12-large.jpg"</td>
+						<td><a href="details001.html">朵唯L9mini</a><span class="phoneColor">[玫瑰金]</span></td>
+						<td class="priceOut">￥<span class="price">1499.03</span></td>
+						<td>
+							<button class="decrease">-</button>
+							<input class="counts" type="text" disabled="disabled" value="1" />	
+							<button class="increase">+</button>		
+						</td>
+						<td class="totalPriceOut">￥<span class="totalPrice">1409.03</span></td>
+						<td><a href="###" class="del">删除</a></td>
+					</tr>
+					<tr>
+						<td width="80"><input class="check" type="checkbox" /></td>
+						<td><img  src="../imgs/873c8bfd-bbe5-43e7-b9f7-c6ec3fb7ec12-large.jpg"</td>
+						<td><a href="details001.html">朵唯L9mini</a><span class="phoneColor">[玫瑰金]</span></td>
+						<td>￥<span class="price">1499.60</span></td>
+						<td>
+							<button class="decrease">-</button>
+							<input class="counts" disabled="disabled" type="text" value="1" />	
+							<button class="increase">+</button>		
+						</td>
+						<td class="totalPriceOut">￥<span class="totalPrice">1499.60</span></td>
+						<td><a href="###" class="del">删除</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="total">
+				<label><input class="check-all check" type="checkbox" />全选</label>
+				<a href="###" class="delete-all">删除</a>
+				<span>已选商品<span class="selectCounts">0</span>件 </span>
+				<span class="up">︽</span>
+				<span class="down">︾</span>
+				<span class="allPriceSpan">合计: ￥<span class="allPrice">0.00</span></span>
+				<span>结算</span>
+			</div>
+			
+			
+		</div>
+			
+	</div>
+		<!--底部-->
+	<div id="footer">
+		<div class="footer">
+			<div class="footer-top">
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<a href="###">购物流程</a>
+						<a href="###">支付方式</a>
+						<a href="###">物流配送</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<a href="###">购物流程</a>
+						<a href="###">支付方式</a>
+						<a href="###">物流配送</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<a href="###">购物流程</a>
+						<a href="###">支付方式</a>
+						<a href="###">物流配送</a>
+						<a href="###">支付方式</a>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<a href="###">购物流程</a>
+						<a href="###">支付方式</a>
+						<a href="###">物流配送</a>
+						<a href="###">物流配送</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<a href="###">购物流程</a>
+						<a href="###">支付方式</a>
+					</dd>
+				</dl>
+			</div>
+			<p>
+				粤ICP备09095946号Copyright © 2015-2016 朵唯官方商城 朵唯手机官网 朵唯唯一官方购物网站 版权所有
+			</p>
+		</div>
+	</div>
+	<!--绝对定位-->
+	<div class="fixDiv">
+		<a href="###"></a>
+		<a href="###"></a>
+		<a href="###"></a>
+	</div>
+	</body>
+</html>
+

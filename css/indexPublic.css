@@ -152,7 +152,7 @@ a {
         min-height: 42px;
         margin-right: 100px;
         float: left; }
-        #bottom .bottom .bottom-top dl:last {
+        #bottom .bottom .bottom-top dl:last-child {
           margin-right: 0; }
         #bottom .bottom .bottom-top dl dt {
           float: left; }

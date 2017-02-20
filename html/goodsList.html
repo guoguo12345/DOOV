@@ -3,37 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>商品列表</title>
-		<link rel="stylesheet" type="text/css" href="css/indexPublic.css"  />
-		<link rel="stylesheet" type="text/css" href="css/goodsList.css"  />
-		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/indexPublic.css"  />
+		<link rel="stylesheet" type="text/css" href="../css/goodsList.css"  />
+		<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
 		<script type="text/javascript">
 			$(function(){			
-				$.ajax({
-					type: "post",
-					url: "getGoodsJson.php",			
-					success: function(data){
-						var	arr = eval(data);
-						console.log(arr);
-						for(var i=0;i<arr.length;i++){
-							var str = '<dl><dt><a href="details001.html"><img src="'
-							+arr[i].goodsImg+'" /></a></dt><dd><a>'+arr[i].goodsName+
-							'</a><a>'+arr[i].goodsDesc+'</a><a>'+
-							arr[i].goodsPrice+'</a></dd></dl>';			
-							$(".goodsDl").append(str);
-						}
-					}			
-				});	
-			//图片放大
-				$(".goodsDl").on("mouseenter","dl",function(){
-					$(this).find("img").stop(true,true).animate({"width":"100%","height":"100%"},200);	
-				});
-				$(".goodsDl").on("mouseleave","dl",function(){
-					$(this).find("img").stop(true,true).animate({"width":"80%","height":"80%"},200);	
-				});
-			
+				
 			});
 		</script>
-		<script type="text/javascript" src="js/goodsList.js"></script>
+		<script type="text/javascript" src="../js/goodsList.js"></script>
 	</head>
 	<body>
 		<!--		头部-->		
@@ -41,7 +19,7 @@
 		<div class="header">
 			<div class="left">
 				<a href="###" class="weixin">朵唯官方微信
-					<img src="imgs/doov_wx.jpg"  />
+					<img  src="../imgs/doov_wx.jpg"  />
 				</a>
 				<a href="###" >朵唯商城APP</a>
 			</div>
@@ -59,7 +37,7 @@
 	<div class="auto">
 		<div class="nav">
 			<a href="index.html" class="logo">
-				<img src="imgs/logo.gif" alt="logo"/>
+				<img  src="../imgs/logo.gif" alt="logo"/>
 			</a>
 			<ul class="navList">
 				<li><a href="goodsList.html">手机</a></li>
@@ -145,7 +123,7 @@
 				<div class="bottom-top">
 					<dl>
 						<dt>
-							<img src="imgs/footer1.png"  /> 
+							<img  src="../imgs/footer1.png"  /> 
 						</dt>
 						<dd>
 							<a href="###" class="font14">正品保障</a><br />
@@ -154,7 +132,7 @@
 					</dl>
 					<dl>
 						<dt>
-							<img src="imgs/footer2.png"  /> 
+							<img  src="../imgs/footer2.png"  /> 
 						</dt>
 						<dd>
 							<a href="###" class="font14">正品保障</a><br />
@@ -163,7 +141,7 @@
 					</dl>
 					<dl>
 						<dt>
-							<img src="imgs/footer3.png"  /> 
+							<img  src="../imgs/footer3.png"  /> 
 						</dt>
 						<dd>
 							<a href="###" class="font14">正品保障</a><br />
@@ -172,7 +150,7 @@
 					</dl>
 					<dl>
 						<dt>
-							<img src="imgs/footer4.png"  /> 
+							<img  src="../imgs/footer4.png"  /> 
 						</dt>
 						<dd>
 							<a href="###" class="font14">正品保障</a><br />
@@ -220,13 +198,13 @@
 					</ul>
 					<div class="bottom-right">
 						<dl>
-							<dt><img src="imgs/footer-phone.png" /></dt>
+							<dt><img  src="../imgs/footer-phone.png" /></dt>
 							<dd>
 								<span>400-700-3456</span><br />
 								周一至周日 9:00-18:00
 							</dd>
 						</dl>
-						<a href="#"><img src="imgs/footer-qq.png"  /></a>
+						<a href="#"><img  src="../imgs/footer-qq.png"  /></a>
 					</div>
 				</div>
 			</div>
@@ -246,15 +224,15 @@
 	</div>
 <!--	右侧绝对定位-->	
 	<a class="user">
-		<img src="imgs/center-right1.png" />
+		<img  src="../imgs/center-right1.png" />
 		<span>用户中心</span>
 	</a>
 	<div class="_right">
 		<a href="###" class="count">0</a>
-		<a href="shoppingCar.html" class="car"><img src="imgs/cart.png" /><br />购物车</a>
+		<a href="shoppingCar.html" class="car"><img  src="../imgs/cart.png" /><br />购物车</a>
 	</div>
 	<a href="###" class="customer">
-		<img src="imgs/center-right3.png" />
+		<img  src="../imgs/center-right3.png" />
 		<span>客户咨询</span>
 	</a>
 	</body>
