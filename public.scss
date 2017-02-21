@@ -44,11 +44,11 @@ header{
             a{
                 color: #fff;  
                 margin:{
-                    left: 20px; 
+                    left: 20px;
                 }
                 img{
                     width: 148px;
-                    height:　148px;
+                    height: 148px;
                 }                           
             }
             .download{
@@ -197,6 +197,7 @@ header{
                 margin-bottom: 10px;
                 background: url(../imgs/common-sprites.png) no-repeat 10px 10px;
                 font-weight: bolder;
+                border: 1px solid red;
                 color: #666;
             }
             dd{
@@ -215,12 +216,12 @@ header{
                 }
             }
             &:nth-child(2) dt{
-                background-position: -215px 10px;
+                background-position: -67px 10px;
             } 
             &:nth-child(3) dt{
-                background-position: -67px 10px;
+                background-position: -138px 10px;
             }&:nth-child(4) dt{
-                background-position: -px 10px;
+                background-position: -211px 10px;
             }
             &:nth-child(5) dt{
                 background: url(../imgs/follow-us.png) no-repeat 7px 8px;

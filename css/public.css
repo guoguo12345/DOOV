@@ -41,7 +41,7 @@ header {
         margin-left: 20px; }
         #header .header .left a img {
           width: 148px;
-          height: 　148px; }
+          height: 148px; }
       #header .header .left .download {
         position: relative; }
         #header .header .left .download img {
@@ -157,6 +157,7 @@ header {
         margin-bottom: 10px;
         background: url(../imgs/common-sprites.png) no-repeat 10px 10px;
         font-weight: bolder;
+        border: 1px solid red;
         color: #666; }
       #footer .footer-top dl dd a {
         display: block;
@@ -168,11 +169,11 @@ header {
         #footer .footer-top dl dd a:hover {
           border-bottom: 1px solid #646464; }
       #footer .footer-top dl:nth-child(2) dt {
-        background-position: -215px 10px; }
-      #footer .footer-top dl:nth-child(3) dt {
         background-position: -67px 10px; }
+      #footer .footer-top dl:nth-child(3) dt {
+        background-position: -138px 10px; }
       #footer .footer-top dl:nth-child(4) dt {
-        background-position: -px 10px; }
+        background-position: -211px 10px; }
       #footer .footer-top dl:nth-child(5) dt {
         background: url(../imgs/follow-us.png) no-repeat 7px 8px; }
   #footer p {
