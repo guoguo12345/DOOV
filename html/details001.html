@@ -7,6 +7,18 @@
 		<link rel="stylesheet" type="text/css" href="../css/details001.css"  />
 		<script src="../js/jquery-1.8.3.js"></script>
 		<script src="../js/details001.js"></script>
+		<script>
+			$(function(){
+				$("dl .add").click(function(){
+					console.log($('.goodsName').html());
+					$.ajax({
+						url: "../addCart.php",
+						data: {"goodsName":$('.goodsName').html(),"goodsCounts":$(".counts").val()}
+					});
+				
+				});
+			});
+		</script>
 	</head>
 	<body>
 <!--		头部-->		
@@ -80,7 +92,7 @@
 						</div>
 					</div>
 					<div class="top-right">
-						<p>朵唯L9mini <span>1499.00元</span></p>
+						<p><span class="goodsName">朵唯L9mini </span><span class="goodsPrice">1499.00元</span></p>
 						<p>购买本产品赠送积分1400 新年立减100元</p>
 						<dl>
 							<dt>颜色</dt>
@@ -91,7 +103,7 @@
 							<dd><a class="reduce">-</a><input class="counts" type="text" value="1"><a class="increase">+</a></dd>
 						</dl>
 						<dl>
-							<dd><a class="buy" href="###">立即购买</a><a class="add" href="###">加入购物车</a></dd>
+							<dd><a class="buy" href="shoppingCar.html">立即购买</a><a class="add" href="###">加入购物车</a></dd>
 						</dl>
 					</div>
 				</div>

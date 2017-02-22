@@ -61,7 +61,7 @@ $(function(){
 	});
 	//详情页面加入购物车数量加减
 	var counts = $(".counts").val();
-	console.log("counts="+counts);
+//	console.log("counts="+counts);
 	$(".increase").click(function(){
 		counts++;
 		$(".counts").val(counts);

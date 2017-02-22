@@ -31,8 +31,9 @@ $(function(){
 			str = '<tr><td width="80"><input class="check" type="checkbox" /></td><td><img  src="../'
 		+data[i].goodsImg+'" /></td><td><a href="details001.html">'
 		+data[i].goodsName+'</a><span class="phoneColor">['
-		+data[i].goodsColor+']</span></td><td class="priceOut">￥<span class="price">'
-		+data[i].goodsPrice+'</span></td><td><button class="decrease">-</button><input class="counts" disabled="disabled" type="text" value="1" /><button class="increase">+</button></td><td class="totalPriceOut">￥<span class="totalPrice">'+data[i].goodsPrice+'</span></td><td><a href="###" class="del">删除</a></td></tr>';
+		+data[i].goodsColor+']</span></td><td class="priceOut"><span class="price">'
+		+data[i].goodsPrice+'</span></td><td><button class="decrease">-</button><input class="counts" disabled="disabled" type="text" value="'
+		+data[i].goodsCounts+'" /><button class="increase">+</button></td><td class="totalPriceOut">￥<span class="totalPrice">'+(data[i].goodsPrice*data[i].goodsCounts)+'</span></td><td><a href="###" class="del">删除</a></td></tr>';
 			$("tbody").append(str);
 		}
 		
